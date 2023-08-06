@@ -38,6 +38,9 @@ h1 {
   color: transparent;
   -webkit-text-fill-color: transparent;
   animation: gradient 3s linear infinite;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 @keyframes gradient {
