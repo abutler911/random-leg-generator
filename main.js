@@ -10,16 +10,32 @@ var choices = [
 ];
 
 function randomChoice() {
+  var timerElement = document.getElementById("timer");
+  timerElement.textContent = "";
+
   var display = document.getElementById("display");
+  display.classList.remove("choice-display-static");
 
   var intervalId = setInterval(function () {
     display.textContent = choices[Math.floor(Math.random() * choices.length)];
   }, 10);
 
+  var countdown = 5;
+  timerElement.textContent = "Time left: " + countdown + "s";
+
+  var countdownIntervalId = setInterval(function () {
+    countdown--;
+    timerElement.textContent = "Time left: " + countdown + "s";
+  }, 1000);
+
   setTimeout(function () {
     clearInterval(intervalId);
+    clearInterval(countdownIntervalId);
+    timerElement.textContent = "";
+    document.body.style.backgroundColor = "#f4f4f4";
+    display.style.fontSize = "2em";
     display.classList.add("choice-display-static");
-  }, 5000);
+  }, countdown * 1000);
 
   changeBackgroundColor();
 }

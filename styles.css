@@ -11,13 +11,6 @@ body {
   transition: background-color 1s;
 }
 
-/* h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  color: #000000;
-  margin-bottom: 24px;
-} */
-
 h1 {
   font-size: 3em;
   font-weight: 800;
@@ -52,6 +45,13 @@ h1 {
   }
 }
 
+#timer {
+  font-size: 2em;
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 .choice-display {
   width: 100%;
   height: 200px;
@@ -72,7 +72,7 @@ h1 {
 
 .choice-display-static {
   animation: none !important;
-  font-size: 54px;
+  font-size: 2.8rem;
   color: #ff5e62;
 }
 
