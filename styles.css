@@ -11,12 +11,44 @@ body {
   transition: background-color 1s;
 }
 
-h1 {
+/* h1 {
   font-size: 4rem;
   font-weight: 800;
   color: #000000;
   margin-bottom: 24px;
+} */
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 100px;
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    orange 10%,
+    yellow 20%,
+    green 30%,
+    blue 40%,
+    indigo 50%,
+    violet 60%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .choice-display {
   width: 100%;
   height: 200px;
