@@ -37,6 +37,7 @@ h1 {
 
 .choice-display-static {
   animation: none !important;
+  font-size: 54px;
 }
 
 .btn {
