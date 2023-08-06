@@ -32,6 +32,11 @@ h1 {
   opacity: 1;
   transition: opacity 0.5s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: changeSize 1.5s linear infinite;
+}
+
+.choice-display-static {
+  animation: none !important;
 }
 
 .btn {
@@ -68,5 +73,17 @@ h1 {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes changeSize {
+  0% {
+    font-size: 24px;
+  }
+  50% {
+    font-size: 28px;
+  }
+  100% {
+    font-size: 24px;
   }
 }
