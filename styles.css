@@ -33,7 +33,7 @@ h1 {
   animation: gradient 3s linear infinite;
   border: 1px solid #000;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10%;
 }
 
 @keyframes gradient {
@@ -57,7 +57,7 @@ h1 {
   height: 200px;
   background-color: #ffffff;
   border: 1px solid #ced4da;
-  border-radius: 5px;
+  border-radius: 50%;
   font-size: 2.2rem;
   font-weight: 800;
   color: #000000;
@@ -73,7 +73,7 @@ h1 {
 .choice-display-static {
   font-size: 2.8rem;
   color: transparent;
-  background: linear-gradient(90deg, transparent, #fc0004, transparent),
+  background: linear-gradient(90deg, transparent, #000000, transparent),
     radial-gradient(
       circle,
       rgba(255, 255, 0, 0.1),
@@ -103,8 +103,8 @@ h1 {
     -webkit-text-fill-color: transparent;
   }
   100% {
-    color: #ff5e62;
-    -webkit-text-fill-color: #ff5e62;
+    color: #ff0004;
+    -webkit-text-fill-color: #ff0004;
   }
 }
 
@@ -113,12 +113,12 @@ h1 {
   transition: transform 0.3s ease;
   animation: pulse 2s infinite;
   background: linear-gradient(to right, #ff9966, #ff5e62);
-  border: none;
+  border: 1px solid #3a3a3a;
   color: #000;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 12px 24px;
-  border-radius: 5px;
+  border-radius: 12px;
   outline: none;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
