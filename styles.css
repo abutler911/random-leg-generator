@@ -73,19 +73,19 @@ h1 {
 .choice-display-static {
   font-size: 2.8rem;
   color: transparent;
-  background: linear-gradient(90deg, transparent, #ff5e62, transparent),
+  background: linear-gradient(90deg, transparent, #fc0004, transparent),
     radial-gradient(
       circle,
-      rgba(255, 255, 0, 0.2),
-      rgba(255, 165, 0, 0.2),
-      rgba(255, 0, 0, 0.2),
+      rgba(255, 255, 0, 0.1),
+      rgba(255, 165, 0, 0.1),
+      rgba(255, 0, 0, 0.1),
       transparent
     );
   background-size: 200% auto, cover;
   background-clip: text, border-box;
   -webkit-background-clip: text, border-box;
   -webkit-text-fill-color: transparent;
-  animation: sweepHighlight 2s ease-in forwards, fillSolid 2s 2s forwards;
+  animation: sweepHighlight 1.5s ease-in forwards, fillSolid 1.5s 1.5s forwards;
 }
 
 @keyframes sweepHighlight {
