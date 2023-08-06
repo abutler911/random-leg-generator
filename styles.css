@@ -85,7 +85,8 @@ h1 {
   background-clip: text, border-box;
   -webkit-background-clip: text, border-box;
   -webkit-text-fill-color: transparent;
-  animation: sweepHighlight 1.5s ease-in forwards, fillSolid 1.5s 1.5s forwards;
+  animation: sweepHighlight 1.5s ease-in forwards, fillSolid 1s 1s forwards,
+    spin 1.5s 1.5s forwards, spin-back 1.5s 1.5s forwards;
 }
 
 @keyframes sweepHighlight {
@@ -105,6 +106,22 @@ h1 {
   100% {
     color: #ff0004;
     -webkit-text-fill-color: #ff0004;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-back {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 
