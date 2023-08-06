@@ -33,7 +33,6 @@ function randomChoice() {
     clearInterval(countdownIntervalId);
     timerElement.textContent = "";
     document.body.style.backgroundColor = "#f4f4f4";
-    display.style.fontSize = "2em";
     display.classList.add("choice-display-static");
   }, countdown * 1000);
 
